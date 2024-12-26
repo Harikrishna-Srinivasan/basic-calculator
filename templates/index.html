@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block head %}
+	<title>Calculator</title>
+	<link rel="stylesheet" href="../static/styles.css"/>
+	<link rel="icon" type="image/x-icon" href="../static/images/favicon.jpg">
+{% endblock %}
+
+{% block body %}
+	<input type="text" class="displayArea" autofocus autocomplete="off"/>
+	<main>
+		{% for row in buttons %}
+			{% for button in row %}
+				<button onclick="display(event)">{{ button }}</button>
+			{% endfor %}
+		{% endfor %}
+	</main>
+	<script src="../static/script.js"></script>
+{% endblock %}

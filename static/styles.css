@@ -1,0 +1,34 @@
+main {
+	display: block;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 85vh;
+}
+
+main > button {
+	height: 14vh;
+	width: calc(25% - 1%);
+	background-color: #ddd;
+	color: hsl(0, 0%, 7%);
+	border: 1px solid #111;
+	font-size: 1.5em;
+	flex-grow: 1;
+}
+
+main > button:hover {
+	background-color: #d5d5d5;
+}
+
+main > button:active {
+	background-color: #ccc;
+}
+
+.displayArea {
+	width: 97%;
+	height: 14vh;
+	font-size: 2em;
+	text-align: right;
+	border: 1px solid black;
+	margin-bottom: 4px;
+}
