@@ -33,12 +33,12 @@ jobs:
 
       - name: Build Static HTML
         run: |
-          python app.py  # Generates static files into the "build/" directory
+          python app.py
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'
+          path: './build/'
 
       - name: Deploy to GitHub Pages
         id: deploy
